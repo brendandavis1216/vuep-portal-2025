@@ -1,7 +1,5 @@
 {
-  "engines": {
-    "node": "20.x"
-  },
+  "engines": { "node": "20.x" },
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
@@ -85,5 +83,13 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^6.3.4"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
+  },
+  "overrides": {
+    "vite": {
+      "rollup": "npm:@rollup/wasm-node@4.9.5"
+    }
   }
 }
